@@ -1,4 +1,7 @@
-#IPWhois CLI 
+```md
+# 🛰️ IPWhois CLI Tool
+
+```
 
 ██╗██████╗        ██████╗ ███████╗██╗███╗   ██╗████████╗
 ██║██╔══██╗      ██╔═══██╗██╔════╝██║████╗  ██║╚══██╔══╝
@@ -7,48 +10,81 @@
 ██║██║           ╚██████╔╝███████║██║██║ ╚████║   ██║
 ╚═╝╚═╝            ╚═════╝ ╚══════╝╚═╝╚═╝  ╚═══╝   ╚═╝
 
-IPWhoIs CLI Tool            By SANATANI_x_ANONYMOUS
----------------------
-A robust and colorful command-line interface tool built in Python to retrieve and display comprehensive information about any given IP address using the ipwho.is API.FeaturesInteractive CLI: Prompts the user for an IP address and provides detailed information.Colorful Output: Uses ANSI escape codes to make the output easy to read and visually appealing.Recursive Display: Handles nested JSON data gracefully, printing all fields with proper indentation.Google Maps Link: Automatically generates a clickable Google Maps link for the IP's geographical coordinates.Error Handling: Catches common network and API errors to provide a smooth user experience.PrerequisitesPython 3.6 or higherrequests libraryInstallationClone the repository:git clone https://github.com/your-username/ipwhois-cli-tool.git
+````
+
+**Author:** `SANATANI_x_ANONYMOUS`  
+**Description:**  
+A **fast**, **colorful**, and **interactive** Python CLI tool to fetch **detailed IP address information** using the [ipwho.is API](https://ipwho.is).  
+Perfect for OSINT, network diagnostics, and geolocation lookups — all **from your terminal**.
+
+---
+
+## ✨ Features
+- 🎨 **Colorful Output** – ANSI escape colors for a hacker-style, readable UI  
+- 🧭 **Geo Lookup** – Country, region, city, coordinates, timezone, and more  
+- 🌍 **Google Maps Link** – Direct link to pinpoint IP location  
+- 🔄 **Recursive Display** – Nicely formatted nested JSON output  
+- 🛡️ **Error Handling** – Handles API errors, invalid IPs, and network issues gracefully  
+- 🚀 **Interactive CLI** – Just run, type an IP, get results instantly  
+
+---
+
+## 📦 Installation
+```bash
+# Clone this repo
+git clone https://github.com/YOUR-USERNAME/ipwhois-cli-tool.git
 cd ipwhois-cli-tool
-(Note: Replace your-username with your actual GitHub username.)Install the required Python library:pip install requests
-UsageRun the script from your terminal:python ipwhois.py
-The tool will display a banner and then prompt you to enter an IP address.Enter an IP address (or 'q' to quit): 8.8.8.8
-To exit the tool, simply type q and press Enter.Example OutputFetching data for IP: 8.8.8.8...
+
+# Install dependencies
+pip install requests
+````
+
+---
+
+## 🚀 Usage
+
+```bash
+python ipwhois.py
+```
+
+Then enter:
+
+```
+Enter an IP address (or 'q' to quit): 8.8.8.8
+```
+
+---
+
+## 🖥 Example Output
+
+```
+Fetching data for IP: 8.8.8.8...
 
 --- Full IP Information ---
 ip: 8.8.8.8
 success: True
 type: IPv4
 continent: North America
-continent_code: NA
-country: United States
-country_code: US
+country: United States 🇺🇸
 region: California
-region_code: CA
 city: Mountain View
 latitude: 37.42261
 longitude: -122.08428
-is_eu: False
-postal: 94043
-calling_code: 1
-capital: Washington D.C.
-borders: CA,MX
-flag: 🇺🇸
-  img: https://cdn.ipwhois.io/flags/us.svg
-  emoji: 🇺🇸
-  emoji_unicode: U+1F1FA U+1F1F8
+Google Maps: https://maps.google.com/?q=37.42261,-122.08428
 connection:
   asn: 15169
   org: Google LLC
   isp: Google LLC
-  domain: google.com
 timezone:
   id: America/Los_Angeles
-  abbr: PDT
-  is_dst: True
-  offset: -25200
   utc: -07:00
-  current_time: 2024-05-18T10:47:06-07:00
+```
+
 ---
-LicenseThis project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+See [`LICENSE.md`](LICENSE.md) for details.
+
+---
